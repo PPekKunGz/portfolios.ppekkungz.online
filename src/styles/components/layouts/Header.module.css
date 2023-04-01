@@ -1,0 +1,21 @@
+.header {
+    padding: 10px;
+    width: calc(100% - 20px);
+    border-bottom: var(--border);
+    display: grid;
+    grid-template-columns: 30% 70%;
+    color: #ffffff;
+}
+.header .logo img{
+    height: 50px;
+}
+.header ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header ul li{
+    padding: 0 30px;
+}

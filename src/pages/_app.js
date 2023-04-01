@@ -1,4 +1,4 @@
-// import Header from 'components/layouts/header';
+import Header from '../../components/layouts/Header';
 import '../styles/globals.css'
 import Head from "next/head";
 
@@ -34,7 +34,7 @@ export default function App({ Component, pageProps }) {
         content="@PPekKunGzDev | Portfolio | Front-End Developer"
       />
     </Head>
-    {/* <Header /> */}
+    <Header />
     <Component {...pageProps} />
   </>
   )

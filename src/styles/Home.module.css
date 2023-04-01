@@ -1,0 +1,110 @@
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: auto;
+    color: #ffffff;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    border-bottom: var(--border);
+    padding-bottom: 50px;
+}
+
+.banner .content {
+    text-align: justify;
+    padding-right: 50px;
+}
+
+.banner .content h1 {
+    font-size: 4.5em;
+    margin: 0;
+}
+
+.gradiantText {
+    display: inline-block;
+    background-image: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.job::before {
+    display: inline-flex;
+    content: attr(data-job1);
+    animation: effectText 1s linear infinite alternate;
+}
+
+.job {
+    display: inline-block;
+}
+
+.job::before {
+    content: attr(data-job1);
+    overflow: hidden;
+    display: inline-flex;
+    animation: effectText 1.2s linear infinite alternate,
+        changeText 4.8s linear infinite;
+}
+
+@keyframes effectText {
+    from {
+        max-width: 0;
+    }
+
+    to {
+        max-width: 500px;
+    }
+}
+
+@keyframes changeText {
+    from {
+        content: attr(data-job1);
+    }
+
+    to {
+        content: attr(data-job2);
+    }
+}
+.find {
+    margin-top: 50px;
+}
+.find ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.find ul li {
+    width: 50px;
+    height: 50px;
+    box-shadow: var(--box-shadow);
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.find ul li:hover {
+    color: #fff;
+    background-image: var(--gradient);
+}
+.banner .avatar img {
+    width: 600px;
+}
+.banner .avatar {
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.banner .avatar::before{
+    position: absolute;
+    width: 60%;
+    height: 95%;
+    box-shadow: var(--box-shadow);
+    content: '';
+    bottom: 0;
+    z-index: 1;
+}
