@@ -1,0 +1,188 @@
+@media screen and (max-width: 767px) {
+    .listSkills {
+        transform: translate(4%, 1%);
+    }
+}
+.container {
+    width: 1200px;
+    max-width: 150%;
+    color: #ffffff;
+}
+.title {
+    text-align: center;
+    padding-top: 130px;
+}
+
+.listSkills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+    border-bottom: 1px solid #1c1c31;
+    padding-bottom: 50px;
+}
+
+.listSkills .evaluate {
+    width: 100%;
+    height: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.evaluate {
+    position: relative;
+    padding: 7px 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.evaluate div {
+    position: relative;
+    width: 0%;
+    height: 5px;
+    border-radius: 10px;
+    background-image: var(--gradient-bg);
+    border: 1px solid var(--box-shadow);
+    box-shadow: 0 0 5px var(--box-shadow);
+}
+
+.html_bar {
+    animation: html-fill 2s forwards;
+}
+
+.css_bar {
+    animation: css-fill 2s forwards;
+}
+
+.javascript_bar {
+    animation: javascript-fill 2s forwards;
+}
+
+.php_bar {
+    animation: php-fill 2s forwards;
+}
+
+.nextjs_bar {
+    animation: nextjs-fill 2s forwards;
+}
+
+.reactjs_bar {
+    animation: reactjs-fill 2s forwards;
+}
+
+.angularjs_bar {
+    animation: angularjs-fill 2s forwards;
+}
+
+.vuejs_bar {
+    animation: vuejs-fill 2s forwards;
+}
+
+.typescript_bar {
+    animation: typescript-fill 2s forwards;
+}
+
+.nuxtjs_bar {
+    animation: nuxtjs-fill 2s forwards;
+}
+
+.python_bar {
+    animation: python-fill 2s forwards;
+}
+
+.java_bar {
+    animation: java-fill 2s forwards;
+}
+
+.bootstrap_bar {
+    animation: bootstrap-fill 2s forwards;
+}
+
+.nodejs_bar {
+    animation: nodejs-fill 2s forwards;
+}
+
+@keyframes html-fill {
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes css-fill {
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes javascript-fill {
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes php-fill {
+    100% {
+        width: 20%;
+    }
+}
+
+@keyframes nextjs-fill {
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes reactjs-fill {
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes angularjs-fill {
+    100% {
+        width: 20%;
+    }
+}
+
+@keyframes vuejs-fill {
+    100% {
+        width: 1%;
+    }
+}
+
+@keyframes typescript-fill {
+    100% {
+        width: 20%;
+    }
+}
+
+@keyframes nuxtjs-fill {
+    100% {
+        width: 25%;
+    }
+}
+
+@keyframes python-fill {
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes java-fill {
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes bootstrap-fill {
+    100% {
+        width: 20%;
+    }
+}
+
+@keyframes nodejs-fill {
+    100% {
+        width: 80%;
+    }
+}
